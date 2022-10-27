@@ -1,0 +1,56 @@
+{{ define "main" }}
+<main>
+    <div class="container mx-auto flex justify-center items-center py-24">
+        <div class="w-[180px] h-[180px] bg-[#4B9FD8] blur-[90px] absolute right-0 top-0"></div>
+        <div class="w-[200px] h-[290px] bg-[#4B9FD8] blur-[100px] absolute left-0"></div>
+        <div class="w-[180px] h-[180px] bg-[#4B9FD8] blur-[90px] absolute right-0 bottom-0"></div>
+        <aside class="mr-28">
+            <h1 class="font-rubik text-[62px] text-[#4B9FD8]">MADIG SMKTB</h1>
+            <p class="font-pupylinux w-[330px] tracking-wide mb-7">sebuah website untuk mengetahui informasi terbaru seputar smk  teknologi balung </p>
+            <a class="font-pupylinux bg-[#4B9FD8] text-white flex items-center rounded-lg py-2 px-4 w-max">Lihat selengkapnya <span class="ml-2 material-symbols-outlined">arrow_right_alt</span></a>
+        </aside>
+        <aside>
+            <img src="/images/main.png" class="w-[700px]" alt="">
+        </aside>
+    </div>
+    <div class="container mx-auto font-pupylinux grid grid-cols-5 gap-7 content-center mb-28">
+        <div class="flex items-center justify-center font-medium h-[120px] bg-[#4B9FD8] text-white rounded-lg">
+            <p>MADIG TERBARU</p>
+        </div>
+        <div class="flex items-center justify-center font-medium h-[120px] bg-[#4B9FD8] text-white rounded-lg">
+            <p>MADIG TERBARU</p>
+        </div>
+        <div class="flex items-center justify-center font-medium h-[120px] bg-[#4B9FD8] text-white rounded-lg">
+            <p>MADIG TERBARU</p>
+        </div>
+        <div class="flex items-center justify-center font-medium h-[120px] bg-[#4B9FD8] text-white rounded-lg">
+            <p>MADIG TERBARU</p>
+        </div>
+        <div class="flex items-center justify-center font-medium h-[120px] bg-[#4B9FD8] text-white rounded-lg">
+            <p>MADIG TERBARU</p>
+        </div>
+        <div class="col-start-2 flex items-center justify-center font-medium h-[120px] bg-[#4B9FD8] text-white rounded-lg">
+            <p>MADIG TERBARU</p>
+        </div>
+        <div class="flex items-center justify-center font-medium h-[120px] bg-[#4B9FD8] text-white rounded-lg">
+            <p>MADIG TERBARU</p>
+        </div>
+        <div class="flex items-center justify-center font-medium h-[120px] bg-[#4B9FD8] text-white rounded-lg">
+            <p>MADIG TERBARU</p>
+        </div>
+    </div>
+    <div class="bg-[url('/images/bg-library.png')] mb-28 py-16 font-pupylinux">
+        <div class="text-center text-white mb-14">
+            <h2 class="text-2xl font-medium mb-2">Cari Judul Majalah</h2>
+            <div class="border-2 border-white w-[100px] rounded-lg mx-auto"></div>
+        </div>
+        <div class="flex justify-center">
+            <div class="bg-white w-[600px] flex items-center rounded-lg overflow-hidden mr-4">
+                <span class="material-symbols-outlined bg-[#D9D9D9] p-3 text-[#4B9FD8]">search</span>
+                <input type="text" class="w-full h-full pl-2">
+            </div>
+            <button class="bg-[#4B9FD8] text-white px-6 rounded-lg">Cari</button>
+        </div>
+    </div>
+</main>
+{{ end }}

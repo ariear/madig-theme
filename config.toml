@@ -1,5 +1,5 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "MADIG SMKTB"
 
-theme = "hugo-tailwind"
+theme = "madig-stm"

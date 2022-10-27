@@ -2,10 +2,15 @@ module.exports = {
   content: [
     // "./content/**/*.{md,html}",
     "./layouts/**/*.html",
-    "./themes/hugo-tailwind/layouts/**/*.html",
+    "./themes/madig-stm/layouts/**/*.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'pupylinux': ['"Poppins"', 'sans-serif'],
+        'rubik': ['"Rubik"', 'sans-serif'],
+      } 
+    },
   },
   plugins: [],
 }
