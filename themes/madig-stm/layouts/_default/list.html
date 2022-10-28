@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div class="container py-32">
+    <h1>{{ .Title }}</h1>
+
+    {{ range .Pages }}
+        <img src="{{ .Params.featured_image }}" alt="">
+        <p>{{ .Title }}</p>
+    {{ end }}
+</div>
+{{ end }}

@@ -1,15 +1,28 @@
-<header class="border-b z-10 fixed w-full bg-white">
-    <nav class="container flex mx-auto py-3 justify-between items-center font-pupylinux">
+<header class="border-b z-30 fixed w-full bg-white">
+    <nav class="container flex mx-auto py-3 px-5 md:px-10 xl:px-0 justify-between items-center font-pupylinux">
         <a href="/"><img src="/images/logo.png" width="130" alt=""></a>
-        <ul class="flex font-medium text-sm tracking-wide items-center">
-            <li class="mr-6">LIHAT MADIG</li>
+        <ul class="md:flex hidden font-medium text-sm tracking-wide items-center">
+            <a href="/madings" class="mr-6 hover:text-[#4B9FD8] transition-all duration-300">LIHAT MADIG</a>
             <li class="group flex items-center relative">
                 SOCIAL MEDIA <span class="material-symbols-outlined">expand_more</span>
                 <ul class="absolute bg-white px-3 rounded-lg bottom-10 h-0 overflow-hidden group-hover:-bottom-20 group-hover:h-20 group-hover:border transition-all duration-300">
-                    <li class="py-2 border-b">INSTAGRAM</li>
-                    <li class="py-2">YOUTUBE</li>
+                    <li class="py-2 border-b hover:text-[#4B9FD8] transition-all duration-300">INSTAGRAM</li>
+                    <li class="py-2 hover:text-[#4B9FD8] transition-all duration-300">YOUTUBE</li>
                 </ul>
             </li>
         </ul>
+        <div class="md:hidden block">
+            <span class="material-symbols-outlined text-4xl menu-nav border px-2 rounded-lg">menu</span>
+            <ul class="absolute font-medium text-sm tracking-wide items-center pt-3 px-3 bg-white border-b w-full left-0 overflow-hidden h-0 menu-list-nav transition-all duration-300">
+                <li class="mb-3">LIHAT MADIG</li>
+                <li class="mb-3 group flex items-center relative">
+                    SOCIAL MEDIA <span class="material-symbols-outlined">expand_more</span>
+                    <ul class="absolute bg-white px-3 rounded-lg bottom-10 h-0 overflow-hidden group-hover:-bottom-20 group-hover:h-20 group-hover:border transition-all duration-300">
+                        <li class="py-2 border-b">INSTAGRAM</li>
+                        <li class="py-2">YOUTUBE</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </nav>
 </header>

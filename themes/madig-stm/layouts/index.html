@@ -1,55 +1,75 @@
 {{ define "main" }}
 <main>
-    <div class="container mx-auto flex justify-center items-center py-24">
+    <div class="container mx-auto flex lg:flex-row flex-col justify-center items-center py-24">
         <div class="w-[180px] h-[180px] bg-[#4B9FD8] blur-[90px] absolute right-0 top-0"></div>
-        <div class="w-[200px] h-[290px] bg-[#4B9FD8] blur-[100px] absolute left-0"></div>
+        <div class="w-[200px] h-[290px] bg-[#4B9FD8] xl:blur-[100px] blur-[150px] absolute left-0"></div>
         <div class="w-[180px] h-[180px] bg-[#4B9FD8] blur-[90px] absolute right-0 bottom-0"></div>
-        <aside class="mr-28">
-            <h1 class="font-rubik text-[62px] text-[#4B9FD8]">MADIG SMKTB</h1>
-            <p class="font-pupylinux w-[330px] tracking-wide mb-7">sebuah website untuk mengetahui informasi terbaru seputar smk  teknologi balung </p>
-            <a class="font-pupylinux bg-[#4B9FD8] text-white flex items-center rounded-lg py-2 px-4 w-max">Lihat selengkapnya <span class="ml-2 material-symbols-outlined">arrow_right_alt</span></a>
+        <aside class="xl:mr-28 lg:mr-20 mr-0 relative z-10 lg:text-left text-center">
+            <h1 class="font-rubik text-[62px] text-[#4B9FD8] hover:text-[#3C4048] transition-all duration-300" data-aos="fade-right" data-aos-duration="900" >MADIG SMKTB</h1>
+            <p class="font-pupylinux w-[330px] tracking-wide mb-7 lg:mx-0 mx-auto hover:text-[#4B9FD8] transition-all duration-300" data-aos="fade-right" data-aos-duration="600" data-aos-delay="400" >sebuah website untuk mengetahui informasi terbaru seputar smk  teknologi balung </p>
+            <a class="font-pupylinux bg-[#4B9FD8] text-white flex items-center rounded-lg py-2 px-4 w-max lg:mx-0 mx-auto group" data-aos="fade-right" data-aos-duration="700" data-aos-delay="700" >Lihat selengkapnya <span class="ml-2 material-symbols-outlined lg:block hidden group-hover:translate-x-1 transition-all duration-300">arrow_right_alt</span></a>
         </aside>
-        <aside>
-            <img src="/images/main.png" class="w-[700px]" alt="">
+        <aside class="relative z-10" data-aos="fade-left" data-aos-duration="1000">
+            <img src="/images/main.png" class="2xl:w-[700px] xl:w-[550px] sm:w-[400px] w-[90vw]" alt="">
         </aside>
     </div>
-    <div class="container mx-auto font-pupylinux grid grid-cols-5 gap-7 content-center mb-28">
-        <div class="flex items-center justify-center font-medium h-[120px] bg-[#4B9FD8] text-white rounded-lg">
+    <div class="container mx-auto px-5 md:px-10 xl:px-0 font-pupylinux grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 xl:gap-7 content-center mb-28 relative z-10">
+        <div data-aos="fade-up" data-aos-duration="500" class="flex items-center justify-center font-medium h-[120px] bg-[#4B9FD8] text-white rounded-lg hover:-translate-y-2 transition-all duration-300">
             <p>MADIG TERBARU</p>
         </div>
-        <div class="flex items-center justify-center font-medium h-[120px] bg-[#4B9FD8] text-white rounded-lg">
+        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" class="flex items-center justify-center font-medium h-[120px] bg-[#4B9FD8] text-white rounded-lg hover:-translate-y-2 transition-all duration-300">
             <p>MADIG TERBARU</p>
         </div>
-        <div class="flex items-center justify-center font-medium h-[120px] bg-[#4B9FD8] text-white rounded-lg">
+        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="500" class="flex items-center justify-center font-medium h-[120px] bg-[#4B9FD8] text-white rounded-lg hover:-translate-y-2 transition-all duration-300">
             <p>MADIG TERBARU</p>
         </div>
-        <div class="flex items-center justify-center font-medium h-[120px] bg-[#4B9FD8] text-white rounded-lg">
+        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="700" class="flex items-center justify-center font-medium h-[120px] bg-[#4B9FD8] text-white rounded-lg hover:-translate-y-2 transition-all duration-300">
             <p>MADIG TERBARU</p>
         </div>
-        <div class="flex items-center justify-center font-medium h-[120px] bg-[#4B9FD8] text-white rounded-lg">
+        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="900" class="flex items-center justify-center font-medium h-[120px] bg-[#4B9FD8] text-white rounded-lg hover:-translate-y-2 transition-all duration-300">
             <p>MADIG TERBARU</p>
         </div>
-        <div class="col-start-2 flex items-center justify-center font-medium h-[120px] bg-[#4B9FD8] text-white rounded-lg">
+        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="1100" class="xl:col-start-2 flex items-center justify-center font-medium h-[120px] bg-[#4B9FD8] text-white rounded-lg hover:-translate-y-2 transition-all duration-300">
             <p>MADIG TERBARU</p>
         </div>
-        <div class="flex items-center justify-center font-medium h-[120px] bg-[#4B9FD8] text-white rounded-lg">
+        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="1300" class="flex items-center justify-center font-medium h-[120px] bg-[#4B9FD8] text-white rounded-lg hover:-translate-y-2 transition-all duration-300">
             <p>MADIG TERBARU</p>
         </div>
-        <div class="flex items-center justify-center font-medium h-[120px] bg-[#4B9FD8] text-white rounded-lg">
+        <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="1500" class="flex items-center justify-center font-medium h-[120px] bg-[#4B9FD8] text-white rounded-lg hover:-translate-y-2 transition-all duration-300">
             <p>MADIG TERBARU</p>
         </div>
     </div>
-    <div class="bg-[url('/images/bg-library.png')] mb-28 py-16 font-pupylinux">
+    <div class="bg-[url('/images/bg-library.png')] bg-fixed mb-28 py-16 font-pupylinux">
         <div class="text-center text-white mb-14">
             <h2 class="text-2xl font-medium mb-2">Cari Judul Majalah</h2>
             <div class="border-2 border-white w-[100px] rounded-lg mx-auto"></div>
         </div>
         <div class="flex justify-center">
-            <div class="bg-white w-[600px] flex items-center rounded-lg overflow-hidden mr-4">
+            <div class="bg-white w-[70vw] md:w-[600px] flex items-center rounded-lg overflow-hidden mr-4">
                 <span class="material-symbols-outlined bg-[#D9D9D9] p-3 text-[#4B9FD8]">search</span>
-                <input type="text" class="w-full h-full pl-2">
+                <input type="text" class="w-full h-full pl-2 focus:outline-none">
             </div>
             <button class="bg-[#4B9FD8] text-white px-6 rounded-lg">Cari</button>
+        </div>
+    </div>
+    <div class="font-pupylinux mb-24">
+        <div class="text-center mb-14">
+            <h2 class="text-2xl font-medium mb-2">KRITIK SARAN</h2>
+            <div class="border-2 border-black w-[100px] rounded-lg mx-auto"></div>
+        </div>
+        <div class="w-max mx-auto">
+            <div class="bg-white w-[90vw] md:w-[700px] flex items-center rounded-lg border overflow-hidden mb-5">
+                <span class="material-symbols-outlined bg-[#D9D9D9] p-3 text-[#4B9FD8]">person_filled</span>
+                <input type="text" placeholder="Nama" class="w-full h-full pl-2 focus:outline-none">
+            </div>
+            <div class="bg-white w-[90vw] md:w-[700px] flex items-center rounded-lg border overflow-hidden mb-5">
+                <span class="material-symbols-outlined bg-[#D9D9D9] p-3 text-[#4B9FD8]">mail</span>
+                <input type="text" placeholder="Email" class="w-full h-full pl-2 focus:outline-none">
+            </div>
+            <textarea class="border rounded-lg p-2 w-[90vw] md:w-[700px] mb-5 focus:outline-none" placeholder="tulis kritik dan saran disini" cols="30" rows="10"></textarea>
+            <div class="text-right">
+                <button class="py-2 px-6 rounded-lg text-white bg-[#4B9FD8]">Kirim</button>
+            </div>
         </div>
     </div>
 </main>

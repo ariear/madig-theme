@@ -7,5 +7,30 @@
         {{- block "main" . }}{{- end }}
         </div>
         {{- partial "footer.html" . -}}
+
+        <script src="https://unpkg.com/simple-aos@4.1.0/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: true
+            });
+        </script>
+        <script>
+            const menunav = document.querySelector('.menu-nav')
+            const menu_list_nav = document.querySelector('.menu-list-nav')
+            let isOpen = false
+
+            menunav.addEventListener('click',() => {
+                isOpen = isOpen ? false : true
+                if (isOpen) {
+                    menu_list_nav.classList.remove('h-0')
+                    menu_list_nav.classList.remove('overflow-hidden')
+                    menu_list_nav.classList.add('h-[80px]')
+                }else{
+                    menu_list_nav.classList.remove('h-[80px]')
+                    menu_list_nav.classList.add('h-0')
+                    menu_list_nav.classList.add('overflow-hidden')
+                }
+            }) 
+        </script>
     </body>
 </html>
