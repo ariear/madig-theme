@@ -1,10 +1,40 @@
 {{ define "main" }}
-<div class="container py-32">
-    <h1>{{ .Title }}</h1>
+<div class="container mx-auto relative pt-16 pb-20 flex lg:flex-row flex-col">
+    <aside class="xl:w-[70%] lg:w-[60%] relative px-5 md:px-10 lg:px-0">
+        <div class="mb-12">
+            <h1 class="text-center font-rubik text-[#4B9FD8] mb-5">{{ .Title }}</h1>
+            <div class="w-[130px] border-2 border-[#4B9FD8] mx-auto rounded-lg"></div>
+        </div>
 
-    {{ range .Pages }}
-        <img src="{{ .Params.featured_image }}" alt="">
-        <p>{{ .Title }}</p>
-    {{ end }}
+        <div class="font-pupylinux">
+            {{ range .Pages }}
+            <a href="{{ .Permalink }}">
+                <div class="xl:w-[60%] lg:w-[80%] relative border p-5 rounded-lg shadow-lg mb-10 mx-auto">
+                    <h3 class="text-xl font-semibold mb-5">{{ .Title }}</h3>
+                    <img src="{{ .Params.featured_image }}" class="w-full rounded-lg" alt="">
+                </div>
+            </a>
+            {{ end }}
+        </div>
+    </aside>
+    <aside class="grow pt-10 font-pupylinux pl-5 md:pl-10 lg:pl-0">
+        <div class="mb-10">
+            <h3 class="text-lg sm:text-2xl font-medium mb-2">Cari {{ .Title }}</h3>
+            <div class="w-[100px] border-2 border-[#4B9FD8] rounded-lg mb-7"></div>
+            <form action="" method="get">
+                <input type="text" name="" class="border py-2 px-3 rounded-lg mr-2" >
+                <button type="submit" class="py-2 px-6 bg-[#4B9FD8] text-white rounded-lg" >Cari</button>
+            </form>
+        </div>
+        <div>
+            <h3 class="text-lg sm:text-2xl font-medium mb-2">FOLLOW KAMI</h3>
+            <div class="w-[100px] border-2 border-[#4B9FD8] rounded-lg mb-7"></div>
+            <i class="bi bi-instagram py-2 px-3 rounded-full border border-[#4B9FD8] text-[#4B9FD8] mr-2"></i>
+            <i class="bi bi-facebook py-2 px-3 rounded-full border border-[#4B9FD8] text-[#4B9FD8] mr-2"></i>
+            <i class="bi bi-twitter py-2 px-3 rounded-full border border-[#4B9FD8] text-[#4B9FD8] mr-2"></i>
+            <i class="bi bi-youtube py-2 px-3 rounded-full border border-[#4B9FD8] text-[#4B9FD8] mr-2"></i>
+            <i class="bi bi-whatsapp py-2 px-3 rounded-full border border-[#4B9FD8] text-[#4B9FD8]"></i>
+        </div>
+    </aside>
 </div>
 {{ end }}

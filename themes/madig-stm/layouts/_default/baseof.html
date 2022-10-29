@@ -32,5 +32,33 @@
                 }
             }) 
         </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxObiFXxGMD8Yz8klsMWkTYzRwqP4ojgU3VBe7U_G2ecYmzBKAhBSTwV5Ly4EoMQNTr/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const btnKirim = document.querySelector('.btn-kirim')
+            const btnLoading = document.querySelector('.btn-loading')
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              btnLoading.classList.toggle('hidden')
+              btnKirim.classList.toggle('hidden')
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              .then(response => {
+                    btnLoading.classList.toggle('hidden')
+                    btnKirim.classList.toggle('hidden')
+
+                    form.reset()
+                    new Noty({
+                        layout: 'bottomRight',
+                        type: 'success',
+                        theme: 'semanticui',
+                        progressBar: true,
+                        timeout: 4000,
+                        text: 'Kritik dan saran terkirim , terimakasih'
+                    }).show();
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
     </body>
 </html>

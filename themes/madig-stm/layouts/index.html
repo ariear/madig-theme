@@ -5,8 +5,8 @@
         <div class="w-[200px] h-[290px] bg-[#4B9FD8] xl:blur-[100px] blur-[150px] absolute left-0"></div>
         <div class="w-[180px] h-[180px] bg-[#4B9FD8] blur-[90px] absolute right-0 bottom-0"></div>
         <aside class="xl:mr-28 lg:mr-20 mr-0 relative z-10 lg:text-left text-center">
-            <h1 class="font-rubik text-[62px] text-[#4B9FD8] hover:text-[#3C4048] transition-all duration-300" data-aos="fade-right" data-aos-duration="900" >MADIG SMKTB</h1>
-            <p class="font-pupylinux w-[330px] tracking-wide mb-7 lg:mx-0 mx-auto hover:text-[#4B9FD8] transition-all duration-300" data-aos="fade-right" data-aos-duration="600" data-aos-delay="400" >sebuah website untuk mengetahui informasi terbaru seputar smk  teknologi balung </p>
+            <h1 class="font-rubik text-[62px] text-[#4B9FD8]" data-aos="fade-right" data-aos-duration="900" >MADIG SMKTB</h1>
+            <p class="font-pupylinux w-[330px] tracking-wide mb-7 lg:mx-0 mx-auto" data-aos="fade-right" data-aos-duration="600" data-aos-delay="400" >sebuah website untuk mengetahui informasi terbaru seputar smk  teknologi balung </p>
             <a class="font-pupylinux bg-[#4B9FD8] text-white flex items-center rounded-lg py-2 px-4 w-max lg:mx-0 mx-auto group" data-aos="fade-right" data-aos-duration="700" data-aos-delay="700" >Lihat selengkapnya <span class="ml-2 material-symbols-outlined lg:block hidden group-hover:translate-x-1 transition-all duration-300">arrow_right_alt</span></a>
         </aside>
         <aside class="relative z-10" data-aos="fade-left" data-aos-duration="1000">
@@ -57,20 +57,27 @@
             <h2 class="text-2xl font-medium mb-2">KRITIK SARAN</h2>
             <div class="border-2 border-black w-[100px] rounded-lg mx-auto"></div>
         </div>
-        <div class="w-max mx-auto">
-            <div class="bg-white w-[90vw] md:w-[700px] flex items-center rounded-lg border overflow-hidden mb-5">
-                <span class="material-symbols-outlined bg-[#D9D9D9] p-3 text-[#4B9FD8]">person_filled</span>
-                <input type="text" placeholder="Nama" class="w-full h-full pl-2 focus:outline-none">
+        <form name="submit-to-google-sheet" >
+            <div class="w-max mx-auto">
+                <div class="bg-white w-[90vw] md:w-[700px] flex items-center rounded-lg border overflow-hidden mb-5">
+                    <span class="material-symbols-outlined bg-[#D9D9D9] p-3 text-[#4B9FD8]">person_filled</span>
+                    <input type="text" name="nama" placeholder="Nama" class="w-full h-full pl-2 focus:outline-none" required >
+                </div>
+                <div class="bg-white w-[90vw] md:w-[700px] flex items-center rounded-lg border overflow-hidden mb-5">
+                    <span class="material-symbols-outlined bg-[#D9D9D9] p-3 text-[#4B9FD8]">mail</span>
+                    <input type="email" name="email" placeholder="Email" class="w-full h-full pl-2 focus:outline-none" required >
+                </div>
+                <textarea name="pesan" required class="border rounded-lg p-2 w-[90vw] md:w-[700px] mb-5 focus:outline-none" placeholder="tulis kritik dan saran disini" cols="30" rows="10"></textarea>
+                <div class="flex items-center justify-end">
+                    <button type="submit" class="py-2 px-6 rounded-lg text-white bg-[#4B9FD8] btn-kirim">Kirim</button>
+
+                    <button class="py-2 px-7 rounded-lg text-white bg-[#4B9FD8] hidden btn-loading "><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: none; display: block; shape-rendering: auto;" width="25px" height="25px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                        <circle cx="50" cy="50" fill="none" stroke="#ffffff" stroke-width="10" r="35" stroke-dasharray="164.93361431346415 56.97787143782138">
+                          <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
+                        </circle></svg></button>
+                </div>
             </div>
-            <div class="bg-white w-[90vw] md:w-[700px] flex items-center rounded-lg border overflow-hidden mb-5">
-                <span class="material-symbols-outlined bg-[#D9D9D9] p-3 text-[#4B9FD8]">mail</span>
-                <input type="text" placeholder="Email" class="w-full h-full pl-2 focus:outline-none">
-            </div>
-            <textarea class="border rounded-lg p-2 w-[90vw] md:w-[700px] mb-5 focus:outline-none" placeholder="tulis kritik dan saran disini" cols="30" rows="10"></textarea>
-            <div class="text-right">
-                <button class="py-2 px-6 rounded-lg text-white bg-[#4B9FD8]">Kirim</button>
-            </div>
-        </div>
+        </form>
     </div>
 </main>
 {{ end }}

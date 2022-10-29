@@ -1,0 +1,10 @@
+{{ define "main" }}
+    <div class="container pt-16 pb-20 mx-auto">
+        <h1 class="text-center text-[#4B9FD8] mb-10 font-rubik text-3xl sm:text-5xl">{{ .Title }}</h1>
+        <img src="{{ .Params.featured_image }}" class="mx-auto lg:w-[70%] md:w-[80%] w-[90%] mb-16 rounded-lg" alt="">
+
+        <div class="font-pupylinux lg:w-[70%] md:w-[80%] w-[90%] mx-auto relative">
+            {{ .Content }}
+        </div>
+    </div>
+{{ end }}
