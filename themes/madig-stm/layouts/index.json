@@ -1,0 +1,12 @@
+[
+    {{- with $.Site.GetPage "/madings" }}
+      {{- range $index, $data := .Pages }}
+      {{- if $index }},{{ end }}
+      {
+        "title": "{{ $data.Title  }}",
+        "url": "{{ $data.RelPermalink }}",
+        "thumbnail": "{{ $data.Params.featured_image }}"
+      }
+      {{- end }}
+    {{- end }}
+]

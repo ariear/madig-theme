@@ -3,3 +3,6 @@ languageCode = "en-us"
 title = "MADIG SMKTB"
 
 theme = "madig-stm"
+
+[outputs]
+    home = ["HTML", "JSON"]
